@@ -125,3 +125,11 @@ Le tag Git **jalon-1** repère la version **code-couleurs-1.0** avec son mode te
 - Dans un clone du dépôt, récupérer les tags avec `git fetch origin --tags`, puis vérifier la cible avec `git rev-parse jalon-1` ou consulter le commit avec `git show --no-patch jalon-1`.
 
 Ce jalon a été ajouté à la demande de l’utilisateur après le premier commit GitHub. Le commit de documentation qui suit le tag enregistre ce repère ; il ne modifie ni le code du jeu ni la cible du tag. Les huit tests précédemment réussis et les limites de vérification visuelle restent les références pour cette version.
+
+## Preuve de test — couleurs répétées
+
+- **Version testée avec l’identifiant du commit** : code-couleurs-1.0, tag `jalon-1`, commit `e0db0df1dd8c5d2cd2912a3ffa59bb7941efedf1` (fichiers du jeu vérifiés identiques).
+- **La situation de départ** : nouvelle partie, secret Rouge – Rouge – Bleu – Orange ; proposition Rouge – Rouge – Rouge – Rouge.
+- **Le résultat attendu** : 2 couleurs bien placées, 0 mal placée ; les deux rouges supplémentaires ne comptent pas.
+- **Le résultat obtenu** : conforme, 2 bien placées et 0 mal placée ; 1 essai utilisé, 9 restants, partie en cours.
+- **La limite** : test d’intégration sur interface simulée sous Node.js ; rendu et interactions dans un navigateur réel non vérifiés.
