@@ -115,3 +115,13 @@ Au relevé Git de cette session, les sept fichiers du projet sont non suivis ; a
 ### Prochaine reprise
 
 Lire AGENTS.md puis ce README, vérifier l’état réel des fichiers et du dépôt, puis suivre la prochaine demande de l’utilisateur. Les vérifications manuelles restent identifiées, sans autoriser d’autres modifications. Pour rappeler le contexte dans une nouvelle conversation, l’utilisateur peut demander : « Reprends le projet code-couleurs-1.0 et lis AGENTS.md ainsi que le contexte de reprise du README. »
+
+## Jalon Git — jalon-1
+
+Le tag Git **jalon-1** repère la version **code-couleurs-1.0** avec son mode test manuel, publiée dans le dossier `code-couleurs-1.0` du dépôt [Madiv0/Tech_Emergentes](https://github.com/Madiv0/Tech_Emergentes).
+
+- Commit repéré : `e0db0df1dd8c5d2cd2912a3ffa59bb7941efedf1` — « Ajout de code-couleurs-1.0 avec mode test manuel ».
+- [Consulter cette version figée](https://github.com/Madiv0/Tech_Emergentes/tree/jalon-1/code-couleurs-1.0).
+- Dans un clone du dépôt, récupérer les tags avec `git fetch origin --tags`, puis vérifier la cible avec `git rev-parse jalon-1` ou consulter le commit avec `git show --no-patch jalon-1`.
+
+Ce jalon a été ajouté à la demande de l’utilisateur après le premier commit GitHub. Le commit de documentation qui suit le tag enregistre ce repère ; il ne modifie ni le code du jeu ni la cible du tag. Les huit tests précédemment réussis et les limites de vérification visuelle restent les références pour cette version.
