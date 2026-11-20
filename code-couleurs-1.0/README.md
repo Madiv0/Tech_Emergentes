@@ -133,3 +133,22 @@ Ce jalon a été ajouté à la demande de l’utilisateur après le premier comm
 - **Le résultat attendu** : 2 couleurs bien placées, 0 mal placée ; les deux rouges supplémentaires ne comptent pas.
 - **Le résultat obtenu** : conforme, 2 bien placées et 0 mal placée ; 1 essai utilisé, 9 restants, partie en cours.
 - **La limite** : test d’intégration sur interface simulée sous Node.js ; rendu et interactions dans un navigateur réel non vérifiés.
+
+## Questions ouvertes
+
+- Le jeu publié fonctionne-t-il correctement dans un navigateur réel, sur ordinateur et à une largeur de 360 px ?
+- Toutes les commandes sont-elles utilisables au clavier, notamment la sélection des couleurs et le mode test ?
+- Les lettres et les libellés permettent-ils de distinguer les couleurs sans dépendre uniquement de leur apparence ?
+- Les indices annoncés par un lecteur d’écran sont-ils compréhensibles ?
+
+## Correction d’une difficulté rencontrée avec Codex
+
+**Problème initial** : la première tentative de création de tous les fichiers en une seule commande a échoué sous Windows, car la commande était trop longue.
+
+**Preuve avant correction** : l’exécution a renvoyé « The filename or extension is too long. (os error 206) ».
+
+**Correction effectuée** : Codex a fractionné la création des fichiers en plusieurs commandes plus courtes. Cette contrainte a ensuite été ajoutée dans AGENTS.md.
+
+**Preuve après correction** : les sept fichiers du projet ont été créés et la première suite de six tests s’est exécutée avec succès, sans échec. Après l’ajout du mode test, la suite comporte huit tests réussis.
+
+**Limite** : cette correction concerne la procédure de création des fichiers, pas un défaut des règles du jeu. Les tests automatisés ne remplacent pas une vérification dans un navigateur réel.
